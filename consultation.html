@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Form</title>
+    <link rel="stylesheet" href="consultation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="consultform">
+  <h2>Please Fill Out the Consultation Form</h2>
+  <form action="/form/consultationform.php" method="post">
+  <strong>Name</strong><br>
+    <div class="col-md-6">
+      <input type="text" name="firstname" required placeholder="First Name"><br><br>
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="lastname" required placeholder="Last Name"><br><br>
+    </div>
+  <strong>Email</strong><br>
+  <div class="col-md-12">
+    <input type="text" name="email" id="email" required placeholder="example@example.com"><br><br>
+  </div>
+  <strong>Phone Number</strong><br>
+  <div class="col-md-3">
+    <input type="tel" name="phonenumber" required placeholder="08100002220">
+  </div><br>
+  <h3>Service of Interest</h3>
+    <div class="columnwrapper">
+    <div class="col-md-7">
+        <input class="radio" type="radio" name="servicesofinterest" value="corporate-and-conference"> Corporate and conference <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="photo-facial"> Baby-shower-planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="bridal-show-management"> Bridal show management <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="children's-party-planning"> Children's party planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="conference-planning-coordination "> Conference planning & coordination <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="anniversary-party-planning"> Anniversary party planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="birthday-party-planning"> Birthday party planning <br>
+        <input class="radio" type="radio" name="servicesofinterest" value="other"> Other<br>
+  </div>
+    <h3>Message</h3>
+    <textarea rows="2" cols="5" style="height:60px; width:300px;" placeholder="Others Please Specify"></textarea>
+    <br><br>
+  <button type="submit">Submit</button>
+  </form>
+</div>  
+</body>
+</html>
+
